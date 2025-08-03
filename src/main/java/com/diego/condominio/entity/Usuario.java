@@ -36,7 +36,7 @@ public class Usuario implements Serializable {
 
     @Enumerated
     @Column(name = "perfil_usuario",nullable = false,length = 20)
-    private Perfil perfil;
+    private Perfil perfil = Perfil.PERFIL_PROPIETARIO;
 
     public enum Perfil{
         PERFIL_PROPIETARIO,
